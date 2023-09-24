@@ -12,12 +12,12 @@ P2SEL0 .field 0x40004C0B,32 ; Port 2 Select 0
 P2SEL1 .field 0x40004C0D,32 ; Port 2 Select 1
 
 ;For Port 3
-P3IN .field 0x40004C20,32 ; Port 2 Input
-P3OUT .field 0x40004C22,32 ; Port 2 Output
-P3DIR .field 0x40004C24,32 ; Port 2 Direction
-P3REN .field 0x40004C26,32 ; Port 2 Resistor Enable
-P3SEL0 .field 0x40004C2A,32 ; Port 2 Select 0
-P3SEL1 .field 0x40004C2C,32 ; Port 2 Select 1
+P3IN .field 0x40004C20,32 ; Port 3 Input
+P3OUT .field 0x40004C22,32 ; Port 3 Output
+P3DIR .field 0x40004C24,32 ; Port 3 Direction
+P3REN .field 0x40004C26,32 ; Port 3 Resistor Enable
+P3SEL0 .field 0x40004C2A,32 ; Port 3 Select 0
+P3SEL1 .field 0x40004C2C,32 ; Port 3 Select 1
 
 ;For Port 4
 P4IN .field 0x40004C21,32 ; Port 4 Input
@@ -108,7 +108,7 @@ equal
 	ldr r1, P3OUT
 	strb r0, [r1]
 	bx lr
-;--------------------------psuedo delay------------------------------------------------------------------------------
+;--------------------------Psuedo Delay------------------------------------------------------------------------------
 delay:
 	nop
 	nop
